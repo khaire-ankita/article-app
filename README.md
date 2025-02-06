@@ -3,7 +3,7 @@
 Overview:
 
 The Users & Posts Dashboard is a web application built using Next.js that fetches and displays user profiles along with their related posts using the JSONPlaceholder API. This project includes search, sorting, and a detailed view for enhanced usability.
-App is server side rendered and user list component is client side that as it needs state.
+this app is server side rendered and user list component is client side that as it needs state.
 
 Installation:
 
@@ -30,7 +30,8 @@ npm run dev
 # or
 yarn dev
 ```
-
+5. Open http://localhost:3000 in your browser.
+   
 Features:
 
 1. Search Functionality
