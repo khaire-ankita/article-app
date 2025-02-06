@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+Overview:
+
+The Users & Posts Dashboard is a web application built using Next.js that fetches and displays user profiles along with their related posts using the JSONPlaceholder API. This project includes search, sorting, and a detailed view for enhanced usability.
+App is server side rendered and user list component is client side that as it needs state.
+
+Installation:
+
+Ensure you have Node.js and npm or yarn installed.
+Steps:
+
+1.Clone the repository:
+git clone https://github.com/khaire-ankita/article-app
+
+2.Navigate to the project folder:
+article-app
+
+3.Install dependency:
+```bash
+npm install
+# or
+yarn install
+```
+
+4.To run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Features:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Search Functionality
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Users can filter the user profiles by name or email.
 
-## Learn More
+Real-time filtering updates the displayed list as the user types.
 
-To learn more about Next.js, take a look at the following resources:
+2. Sorting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Users can sort profiles based on:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Name 
 
-## Deploy on Vercel
+Company Name 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Sorting options can be toggled easily.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Detail View
+
+Clicking on a user profile navigates to a dynamic route (/users/[id]).
+
+The detail view displays:
+
+User’s complete information (name, email, address, company, etc.).
+
+A list of all posts made by the user.
+
+Technologies Used:
+
+Next.js – Server-side rendering & routing.
+
+React.js – UI development.
+
+Tailwind CSS – Styling.
+
+JSONPlaceholder API – Mock data for users and posts.
